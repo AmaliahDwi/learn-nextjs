@@ -43,7 +43,7 @@ function page() {
                   About
                 </a>
                 <a href="#" className="text-black hover:text-blue-900">
-                  Contact
+                  Contact Us
                 </a>
               </div>
             </div>
