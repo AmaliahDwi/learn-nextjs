@@ -17,7 +17,7 @@ const icons = [
 function page() {
   return (
     <>
-      <div className="">
+      <div className="bg-white">
         <header className="w-full bg-white">
           <div className="bg-white flex justify-between items-center px-8 md:px-10 py-6">
             <div className="flex sm:gap-5 items-center">
@@ -28,29 +28,23 @@ function page() {
               </div>
               <div className="hidden md:block">
                 <div className="flex text-md md:text-lg sm:gap-4 lg:gap-16">
-                  <a href="#" className="text-black hover:text-orange-400">
+                  <a href="#home" className="text-black hover:text-orange-400">
                     HOME
                   </a>
-                  <a href="#" className="text-black hover:text-orange-400">
+                  <a href="#chair" className="text-black hover:text-orange-400">
                     CHAIR
                   </a>
-                  <a href="#" className="text-black hover:text-orange-400">
+                  <a href="#lamp" className="text-black hover:text-orange-400">
                     LAMP
                   </a>
-                  <a href="#" className="text-black hover:text-orange-400">
+                  <a href="#table" className="text-black hover:text-orange-400">
                     TABLE
                   </a>
                   <a
-                    href="#"
+                    href="#collection"
                     className=" text-black hover:text-orange-400 rounded-full"
                   >
                     COLLECTIONS
-                  </a>
-                  <a href="#" className="text-black hover:text-blue-900">
-                    PORTOFILIO
-                  </a>
-                  <a href="#" className="text-black hover:text-orange-400">
-                    BLOG
                   </a>
                 </div>
               </div>
@@ -78,24 +72,24 @@ function page() {
           </div>
         </header>
 
-        <main className="max-w-[1200px] bg-gray-200 mx-auto h-full px-6 lg:px-20 py-10">
+        <main className="max-w-[1200px] bg-gray-200 mx-auto py-10">
           {/* Hero  */}
-          <section className="flex justify-between">
+          <section
+            id="home"
+            className="flex justify-between h-svh border-b-[20px] border-white px-6 lg:px-20"
+          >
             <div className="flex-row px-28 mt-[80px] space-y-10">
               <div className="text-4xl md:text-6xl ">
-                <div className="flex items-center">Let&apos;s Learn</div>
-                <div className="flex items-center">to code</div>
-                <div>an application</div>
+                <div className="flex items-center">Heavy</div>
+                <div className="flex items-center">Pendant</div>
+                <div>Light</div>
               </div>
               <div className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                 amet dicta distinctio hic natus deleniti beatae facere cum sunt
                 tempora!
               </div>
-              <div
-                className="border border-1 border-orange-600 rounded-full w-32 text-center py-2"
-                style={width}
-              >
+              <div className="border border-1 border-orange-600 rounded-full w-32 text-center py-2 hover:text-orange-600">
                 <button>Shop Now</button>
               </div>
             </div>
@@ -107,6 +101,57 @@ function page() {
                 alt="lamp"
                 className="-mt-10 mr-[100px]"
               ></Image>
+            </div>
+          </section>
+
+          <section id="chair" className="flex justify-between ">
+            <div className="flex-row px-28 mt-[80px] space-y-10">
+              <div className="text-4xl md:text-6xl ">
+                <div className="flex items-center">Cirle</div>
+                <div className="flex items-center">Wood</div>
+                <div>Pre-Table</div>
+              </div>
+              <div className="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                amet dicta distinctio hic natus deleniti beatae facere cum sunt
+                tempora!
+              </div>
+            </div>
+            <div>
+              <Image
+                src={"/gambar/chair.png"}
+                width={800}
+                height={400}
+                alt="lamp"
+                className="mt-12 mr-[120px]"
+              ></Image>
+            </div>
+          </section>
+
+          <section
+            id="table"
+            className="flex justify-between h-svh border-b-[20px] border-white px-6 lg:px-20"
+          >
+            <div>
+              <Image
+                src={"/gambar/my-table.png"}
+                width={800}
+                height={400}
+                alt="lamp"
+                className="mt-12 mr-[120px]"
+              ></Image>
+            </div>
+            <div className="flex-row px-28 mt-[80px] space-y-10">
+              <div className="text-4xl md:text-6xl ">
+                <div className="flex items-center">Cirle</div>
+                <div className="flex items-center">Wood</div>
+                <div>Pre-Table</div>
+              </div>
+              <div className="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                amet dicta distinctio hic natus deleniti beatae facere cum sunt
+                tempora!
+              </div>
             </div>
           </section>
         </main>
