@@ -1,13 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { Bars3Icon } from "@heroicons/react/24/solid";
-import { FaGithub } from "react-icons/fa6";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { PiGitBranchLight } from "react-icons/pi";
-import { IoBookOutline } from "react-icons/io5";
-
+import { MdOutlineEmail } from "react-icons/md";
+import { CiFacebook } from "react-icons/ci";
 const icons = [
   {
     href: "https//instagram.com/ribbiyyuuna",
@@ -18,7 +13,7 @@ function page() {
   return (
     <>
       <div className="bg-white">
-        <header className="w-full bg-white">
+        <header className="w-full bg-white top-100 fixed">
           <div className="bg-white flex justify-between items-center px-8 md:px-10 py-6">
             <div className="flex sm:gap-5 items-center">
               <div className="flex items-center gap-5">
@@ -41,33 +36,13 @@ function page() {
                     TABLE
                   </a>
                   <a
-                    href="#collection"
+                    href="#aboutus"
                     className=" text-black hover:text-orange-400 rounded-full"
                   >
-                    COLLECTIONS
+                    ABOUT US
                   </a>
                 </div>
               </div>
-            </div>
-            <div>
-              <div className="hidden md:block">
-                <div className="flex items-center gap-10 md:gap-14">
-                  <div className="flex gap-10">
-                    <MdEmail className="w-7 h-7 hover:text-blue-900" />
-                    <FaGithub className="w-7 h-7 hover:text-blue-900" />
-                    <FaInstagram className=" w-7 h-7 hover:text-blue-900" />
-                    <FaTiktok className="w-7 h-7 hover:text-blue-900" />
-                  </div>
-                  <div>
-                    <button className="px-6 py-2 text-sm md:text-lg text-center border border-collapse border-blue-900 rounded-full hover:text-blue-900">
-                      Download CV
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <button className="md:hidden p-2">
-                <Bars3Icon className="w-6 h-6" />
-              </button>
             </div>
           </div>
         </header>
@@ -78,7 +53,7 @@ function page() {
             id="home"
             className="flex justify-between h-svh border-b-[20px] border-white px-6 lg:px-20"
           >
-            <div className="flex-row px-28 mt-[80px] space-y-10">
+            <div className="flex-row px-28 mt-[110px] space-y-10">
               <div className="text-4xl md:text-6xl ">
                 <div className="flex items-center">Heavy</div>
                 <div className="flex items-center">Pendant</div>
@@ -95,17 +70,46 @@ function page() {
             </div>
             <div>
               <Image
-                src={"/gambar/my-lamp.png"}
-                width={200}
-                height={400}
+                src={"/gambar/living1.jpg"}
+                width={440}
+                height={500}
                 alt="lamp"
-                className="-mt-10 mr-[100px]"
+                className=" ml-20 mr-[100px]"
               ></Image>
             </div>
           </section>
 
-          <section id="chair" className="flex justify-between ">
-            <div className="flex-row px-28 mt-[80px] space-y-10">
+          <section
+            id="chair"
+            className="flex justify-between h-svh border-b-[20px] border-white px-6 lg:px-20 "
+          >
+            <Image
+              src={"/gambar/chair.png"}
+              width={500}
+              height={200}
+              alt="chair"
+              className=""
+            ></Image>
+            <div className="flex-row px-40 mt-[140px] space-y-10">
+              <div className="text-4xl md:text-6xl ">
+                <div className="flex items-center">Cirle</div>
+                <div className="flex items-center">Wood</div>
+                <div>Pre-Table</div>
+              </div>
+              <div className="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                amet dicta distinctio hic natus deleniti beatae facere cum sunt
+                tempora!
+              </div>
+            </div>
+            <div></div>
+          </section>
+
+          <section
+            id="lamp"
+            className="flex justify-between h-svh border-b-[20px] border-white px-6 lg:px-20 "
+          >
+            <div className="flex-row px-28 mt-[140px] space-y-10">
               <div className="text-4xl md:text-6xl ">
                 <div className="flex items-center">Cirle</div>
                 <div className="flex items-center">Wood</div>
@@ -119,11 +123,11 @@ function page() {
             </div>
             <div>
               <Image
-                src={"/gambar/chair.png"}
-                width={800}
-                height={400}
+                src={"/gambar/my-lamp.png"}
+                width={200}
+                height={200}
                 alt="lamp"
-                className="mt-12 mr-[120px]"
+                className="mr-20"
               ></Image>
             </div>
           </section>
@@ -137,11 +141,11 @@ function page() {
                 src={"/gambar/my-table.png"}
                 width={800}
                 height={400}
-                alt="lamp"
-                className="mt-12 mr-[120px]"
+                alt="table"
+                className="mt-40 mr-[120px]"
               ></Image>
             </div>
-            <div className="flex-row px-28 mt-[80px] space-y-10">
+            <div className="flex-row px-28 mt-[140px] space-y-10">
               <div className="text-4xl md:text-6xl ">
                 <div className="flex items-center">Cirle</div>
                 <div className="flex items-center">Wood</div>
@@ -155,6 +159,23 @@ function page() {
             </div>
           </section>
         </main>
+
+        <footer className="fixed">
+          <div className="bg-white flex justify-between items-center px-8 md:px-10 py-6 ">
+            <div className="flex sm:gap-5 items-center">
+              <div className="flex items-center gap-5">
+                <div className="font-extrabold text-6xl text-sky-950 pr-0 lg:pr-10">
+                  Abani
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <FaInstagram />
+                <MdOutlineEmail />
+                <CiFacebook />
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
