@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter } from "react-icons/fa";
 function Footer() {
   return (
     <div className="w-full">
-      <footer className=" bg-white mx-auto p-56 flex justify-center">
+      <footer className=" bg-white mx-auto flex justify-center">
         <div className="flex-row">
           <div className="text-2xl text-center">Find us in social media</div>
           <div className="flex gap-4 justify-center p-4">
