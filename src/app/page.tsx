@@ -1,59 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import { FaInstagram, FaTiktok } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
-import { CiFacebook } from "react-icons/ci";
-const icons = [
-  {
-    href: "https//instagram.com/ribbiyyuuna",
-  },
-];
+import Layout from "./components/Layout";
 
 function page() {
   return (
     <>
-      <div className="bg-white">
-        <header className="w-full bg-white top-100 fixed">
-          <div className="bg-white flex justify-between items-center px-8 md:px-10 py-6">
-            <div className="flex sm:gap-5 items-center">
-              <div className="flex items-center gap-5">
-                <div className="font-extrabold text-6xl text-sky-950 pr-0 lg:pr-10">
-                  Abani
-                </div>
-              </div>
-              <div className="hidden md:block">
-                <div className="flex text-md md:text-lg sm:gap-4 lg:gap-16">
-                  <a href="#home" className="text-black hover:text-orange-400">
-                    HOME
-                  </a>
-                  <a href="#chair" className="text-black hover:text-orange-400">
-                    CHAIR
-                  </a>
-                  <a href="#lamp" className="text-black hover:text-orange-400">
-                    LAMP
-                  </a>
-                  <a href="#table" className="text-black hover:text-orange-400">
-                    TABLE
-                  </a>
-                  <a
-                    href="#aboutus"
-                    className=" text-black hover:text-orange-400 rounded-full"
-                  >
-                    ABOUT US
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        <main className="max-w-[1200px] bg-gray-200 mx-auto py-10">
+      <main className="w-full h-full">
+        <Layout>
           {/* Hero  */}
           <section
             id="home"
-            className="flex justify-between h-svh border-b-[20px] border-white px-6 lg:px-20"
+            className="flex justify-between border-b-[20px] border-white p-8 w-full"
           >
-            <div className="flex-row px-28 mt-[110px] space-y-10">
+            <div className="flex-row px-28 space-y-10">
               <div className="text-4xl md:text-6xl ">
                 <div className="flex items-center">Heavy</div>
                 <div className="flex items-center">Pendant</div>
@@ -74,7 +33,7 @@ function page() {
                 width={440}
                 height={500}
                 alt="lamp"
-                className=" ml-20 mr-[100px]"
+                className=""
               ></Image>
             </div>
           </section>
@@ -96,7 +55,7 @@ function page() {
                 <div className="flex items-center">Wood</div>
                 <div>Pre-Table</div>
               </div>
-              <div className="">
+              <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                 amet dicta distinctio hic natus deleniti beatae facere cum sunt
                 tempora!
@@ -107,11 +66,11 @@ function page() {
 
           <section
             id="lamp"
-            className="flex justify-between h-svh border-b-[20px] border-white px-6 lg:px-20 "
+            className="flex justify-between border-b-[20px] border-white px-6 py-[200px] lg:px-20 "
           >
-            <div className="flex-row px-28 mt-[140px] space-y-10">
+            <div className="flex-row px-28 space-y-10 py-20">
               <div className="text-4xl md:text-6xl ">
-                <div className="flex items-center">Cirle</div>
+                <div className="flex items-center">Lamp</div>
                 <div className="flex items-center">Wood</div>
                 <div>Pre-Table</div>
               </div>
@@ -127,14 +86,14 @@ function page() {
                 width={200}
                 height={200}
                 alt="lamp"
-                className="mr-20"
+                className=""
               ></Image>
             </div>
           </section>
 
           <section
             id="table"
-            className="flex justify-between h-svh border-b-[20px] border-white px-6 lg:px-20"
+            className="flex justify-between h-svh px-6 lg:px-20 border-b-[20px] border-white "
           >
             <div>
               <Image
@@ -142,41 +101,53 @@ function page() {
                 width={800}
                 height={400}
                 alt="table"
-                className="mt-40 mr-[120px]"
+                className=" mr-[120px]"
               ></Image>
             </div>
-            <div className="flex-row px-28 mt-[140px] space-y-10">
+            <div className="flex-row px-28 space-y-10">
               <div className="text-4xl md:text-6xl ">
                 <div className="flex items-center">Cirle</div>
                 <div className="flex items-center">Wood</div>
                 <div>Pre-Table</div>
               </div>
-              <div className="">
+              <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                 amet dicta distinctio hic natus deleniti beatae facere cum sunt
                 tempora!
               </div>
             </div>
           </section>
-        </main>
 
-        <footer className="fixed">
-          <div className="bg-white flex justify-between items-center px-8 md:px-10 py-6 ">
-            <div className="flex sm:gap-5 items-center">
-              <div className="flex items-center gap-5">
-                <div className="font-extrabold text-6xl text-sky-950 pr-0 lg:pr-10">
-                  Abani
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <FaInstagram />
-                <MdOutlineEmail />
-                <CiFacebook />
+          <section
+            id="about"
+            className="flex-row items-center h-svh px-6 lg:px-20 "
+          >
+            <div className="px-28">
+              <div className="text-center mb-10 text-4xl">About Us</div>
+              <div className="text-justify text-xl">
+                At Abani Furniture, we understand that your home is a reflection
+                of your personality and lifestyle. Therefore, we strive to offer
+                a diverse range of furniture that caters to various tastes and
+                preferences. Whether you are seeking modern minimalism, classic
+                elegance, or eclectic designs, our extensive catalog is
+                thoughtfully curated to inspire and enhance your living spaces.
+                We prioritize sustainability in our manufacturing processes,
+                using responsibly sourced materials to create durable and
+                environmentally conscious furniture that stands the test of
+                time. As a customer-centric company, we prioritize your
+                satisfaction. Our commitment to excellence extends beyond our
+                products to encompass a seamless shopping experience. Our
+                knowledgeable and friendly customer service team is dedicated to
+                assisting you at every step, from selecting the perfect piece to
+                ensuring its safe and timely delivery to your doorstep. Join us
+                on a journey of transforming your living spaces into havens of
+                style and comfort with Abani Furniture – where quality meets
+                craftsmanship, and every piece tells a unique story.
               </div>
             </div>
-          </div>
-        </footer>
-      </div>
+          </section>
+        </Layout>
+      </main>
     </>
   );
 }
